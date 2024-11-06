@@ -166,6 +166,14 @@ a column with type VARCHAR(5) - Vivek, plum, can be inserted not GitHub as it ex
 
 Boolean - TRUE or FALSE
 
+<details><summary>Discussion on saving money in sql dataabse</summary>
+	
+	precision and scale to use for representing money in an SQL database: https://stackoverflow.com/questions/224462/storing-money-in-a-decimal-column-what-precision-and-scale 
+	> general consensus:  DECIMAL(19, 4) for accounting purposes
+
+</details>
+
+
 an SQL query that defines a table friends with five columns: id of type INTEGER, name of type VARCHAR(20), birth_place_latitude of type REAL, year_income of type DECIMAL(20,2), and is_funny of type BOOLEAN.
 
 ```sql
