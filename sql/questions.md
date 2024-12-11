@@ -1,6 +1,63 @@
 
-1. https://lnkd.in/eSPKdY-B
-2. https://lnkd.in/eiScMc6Y
+1. https://leetcode.com/problems/recyclable-and-low-fat-products/
+
+```sql
+# Write your MySQL query statement below
+select product_id
+from Products
+where recyclable = 'Y' and low_fats = 'Y';
+```
+
+2. https://leetcode.com/problems/find-customer-referee/
+
+```sql
+# Write your MySQL query statement below
+select name
+from Customer
+where not referee_id <=> 2;
+```
+
+<details><summary>about sql comparision</summary>
+
+```md
+In SQL:
+
+    Any comparison with NULL results in UNKNOWN (neither TRUE nor FALSE).
+    WHERE filters only rows where the condition evaluates to TRUE.
+
+For example: If the Customer table contains:
+
+### Customer Table
+| name     | referee_id |
+|----------|------------|
+| Alice    | 1          |
+| Bob      | 2          |
+| Charlie  | NULL       |
+| Dave     | 3          |
+
+### Query: SELECT name FROM Customer WHERE referee_id != 2
+#### Result:
+| name     |
+|----------|
+| Alice    |
+| Dave     |
+
+### Query: SELECT name FROM Customer WHERE referee_id != 2 OR referee_id IS NULL
+#### Result:
+| name     |
+|----------|
+| Alice    |
+| Charlie  |
+| Dave     |
+
+    Alice (1) → Included (1 != 2 is TRUE)
+    Bob (2) → Excluded (2 != 2 is FALSE)
+    Charlie (NULL) → Excluded (NULL != 2 is UNKNOWN)
+    Dave (3) → Included (3 != 2 is TRUE)
+```
+
+</details>
+
 3. https://lnkd.in/e8jTv8fc
 4. https://lnkd.in/eunpSKjq
 5. https://lnkd.in/eCddeKz7
