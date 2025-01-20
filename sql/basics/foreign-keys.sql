@@ -43,6 +43,8 @@ RESTRICT
 SET DEFAULT
 NO ACTION --- same as RESTRICT in mysql
 
+--- more: https://github.com/vishalvivekm/databases/blob/main/sql/basics/referencial-actions.md
+  
 --- drop a foreign key: 
 ALTER TABLE students
 DROP FOREIGN KEY fk_department;
