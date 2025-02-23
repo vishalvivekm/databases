@@ -1,4 +1,4 @@
- **Referential Actions (MySQL)**:
+ **Referential Actions (MySQL)**: determine what should happen to rows in a child table when a row in the referenced parent table is deleted or updated.
 1. **CASCADE**:
    - **ON DELETE CASCADE**: Deletes rows in the child table that correspond to the deleted row in the parent table.
    - **ON UPDATE CASCADE**: Updates the foreign key in the child table when the referenced primary key in the parent table is updated.
@@ -23,7 +23,7 @@
 
 ---
 
-### Corrected Summary:
+### Summary:
 - **CASCADE**: Automatically propagates changes (DELETE/UPDATE) to the child table.
 - **SET NULL**: Sets the foreign key in the child table to `NULL`.
 - **RESTRICT**: Prevents the action if child rows exist.
@@ -53,3 +53,4 @@ This setup:
 - Deletes rows in `child` when a referenced row in `parent` is deleted (`ON DELETE CASCADE`).
 - Sets `parent_id` to `NULL` in `child` when the primary key in `parent` is updated (`ON UPDATE SET NULL`).
 
+- Checkout this fiddle: https://www.db-fiddle.com/f/tRDs6ZnzZoeA4RNszGqspx/0
