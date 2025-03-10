@@ -9,8 +9,8 @@
     [SqlFiddle](http://sqlfiddle.com/) <br>
     [db-fiddle](https://www.db-fiddle.com/)
 
+- sqlite viewer:  https://inloop.github.io/sqlite-viewer/#
+[https://www.techonthenet.com/postgresql/index.php](https://www.techonthenet.com/sql/literals.php)
 
-  [https://www.techonthenet.com/postgresql/index.php](https://www.techonthenet.com/sql/literals.php)
-
-https://dev.mysql.com/doc/refman/8.0/en/comparison-operators.html#function_isnull
+https://dev.mysql.com/doc/refman/8.0/en/comparison-operators.html#function_isnull <br>
 NS records: https://www.cloudflare.com/learning/dns/dns-records/dns-ns-record/
