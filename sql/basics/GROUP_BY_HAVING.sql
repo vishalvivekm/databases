@@ -94,7 +94,9 @@ FROM (
 ) m
 JOIN tutors t ON m.tutor_name = t.tutor_name AND t.capacity = m.mincap;
 
+https://www.db-fiddle.com/f/xqJbGEPy62n5oF97rCQz2/0
 
+  
 --- cars table which, among others, has columns such as car_name, engine_type and max_speed.
 
 --- Write a query that groups cars by engine type and finds the maximum speed for each type of engine
