@@ -18,9 +18,18 @@
 
 </details>
 
+
 ### SQL vs. NoSQL Databases
 SQL Databases
 
+https://db-engines.com/en/ranking: 
+- https://en.wikipedia.org/wiki/PostgreSQL
+- https://en.wikipedia.org/wiki/MySQL
+- https://en.wikipedia.org/wiki/SQLite
+- https://db-engines.com/en/system/Microsoft+SQL+Server
+
+- sqlite: serverless, runs within an application
+- postgreSQL: client-server architecture
 SQL databases use structured query language (SQL) to manage relational data in tables with defined schemas.
 
 Pros:
@@ -39,6 +48,21 @@ Cons:
 NoSQL Databases
 
 NoSQL databases handle unstructured, semi-structured, or structured data and are schema-flexible.
+
+Types of NoSQL Databases
+
+[ Document Database](https://en.wikipedia.org/wiki/Document-oriented_database)
+[Key-Value Store](https://en.wikipedia.org/wiki/Key%E2%80%93value_database)
+[Wide-Column](https://en.wikipedia.org/wiki/Wide-column_store)
+[Graph](https://en.wikipedia.org/wiki/Graph_database)
+
+A few of the most popular NoSQL databases are:
+[MongoDB](https://en.wikipedia.org/wiki/MongoDB)
+[Cassandra](https://en.wikipedia.org/wiki/Apache_Cassandra)
+[CouchDB](https://en.wikipedia.org/wiki/Apache_CouchDB)
+[DynamoDB](https://en.wikipedia.org/wiki/Amazon_DynamoDB)
+[ElasticSearch](https://www.elastic.co/)
+
 
 Pros:
 
