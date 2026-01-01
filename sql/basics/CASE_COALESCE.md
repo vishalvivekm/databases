@@ -110,3 +110,32 @@ The result will always be 'False' since TRUE is the first condition.
 - simplifying complex IF conditions.
 
 - handling multi-case data transformations.
+The SQL  function is a standard SQL function that evaluates a list of expressions in order and returns the first non- value encountered. If all expressions in the list are , the function returns . [1, 2, 3]  
+Syntax 
+The basic syntax is the same across most major SQL database management systems (DBMS) like MySQL, PostgreSQL, SQL Server, and Oracle. [2, 4]  
+The arguments (, , etc.) can be column names, variables, or literal values, and they must all be of the same or compatible data types. [5, 6]  
+Key Use Cases and Examples 
+The primary use of  is to handle  values gracefully, providing default values or consolidating data from multiple potential sources. 
+
+• Providing a Default Value: This is the most common use case, replacing a potential  result with a specific alternative, such as 'N/A' or 0. 
+
+	• Example: Replace a potentially  phone number with the string 'N/A'. 
+SELECT name, COALESCE(phone_number, 'N/A') AS phone_number
+FROM customers;
+
+	• Example: Use a default value of 0 in calculations to avoid the entire calculation resulting in . 
+SELECT price * COALESCE(quantity, 0) AS order_total
+FROM order_details;
+
+• Combining Data from Multiple Columns: It is useful for selecting the first available piece of information from several columns. 
+
+	• Example: Prioritize the , then the , and finally the  as the contact number. 
+SELECT first_name, COALESCE(home_phone, work_phone, cell_phone) AS primary_contact
+FROM employees;
+
+• String Concatenation: It can prevent a whole concatenated string from becoming  if one part is missing, by replacing  with an empty string (). 
+
+	• Example: Build a full name, even if the middle name is `NULL`
+    SELECT COALESCE(first_name, '') + ' ' + COALESCE(middle_name, '') + ' ' + COALESCE(last_name, '') AS full_name
+FROM personnel;
+
